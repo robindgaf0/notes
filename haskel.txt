@@ -21,4 +21,8 @@ In haskell, how can you find the lesser of two values? min
 
 In haskell, how can you do integral division? div
 
+END PAGE 4
+
 In haskell, how can you call an prefix function as an infix function? surround with` (backticks)
+
+
