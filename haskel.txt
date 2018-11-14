@@ -1,3 +1,29 @@
+=======
+CHAPTER 1
 
-iyo yo
+In haskell, what is the symbol for 'and'? &&
+
+In haskell, what is the symbol for 'or'? ||
+
+In haskell, what negates a True of False value? not
+
+In haskell, what tests for equality? ==
+
+In haskell, what tests for inequality? /=
+
+In haskell, how can you call a function? function name then parameters
+
+In haskell, what takes one parameter that can be anything that has a
+well-defined successor, and returns that value? succ 
+
+In haskell, how can you find the greater of all values? max
+
+In haskell, how can you find the lesser of two values? min
+
+In haskell, how can you do integral division? div
+
+END PAGE 4
+
+In haskell, how can you call an prefix function as an infix function? surround with` (backticks)
+
 
