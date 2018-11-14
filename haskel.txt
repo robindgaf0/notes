@@ -6,7 +6,7 @@ In haskell, what is the symbol for 'or'? ||
 
 In haskell, what negates a True of False value? not
 
-In haskell, what tests for inequality? ==
+In haskell, what tests for equality? ==
 
 In haskell, what tests for inequality? /=
 
