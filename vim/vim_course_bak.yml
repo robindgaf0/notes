@@ -1,349 +1,349 @@
-- question: How do you move the cursor up? 
+- question: In vim, How do you move the cursor up? 
   answer: k
 
-- question: How do you move the cursor down? 
+- question: In vim, How do you move the cursor down? 
   answer: j
 
-- question: How do you move the cursor left? 
+- question: In vim, How do you move the cursor left? 
   answer: h
 
-- question: How do you move the cursor right? 
+- question: In vim, How do you move the cursor right? 
   answer: l
 
-- question: How do you get to normal mode? 
+- question: In vim, How do you get to normal mode? 
   answer: esc
 
-- question: How do you exit vim and discard any changes you've made? 
+- question: In vim, How do you exit vim and discard any changes you've made? 
   answer: :q!
 
-- question: How do you delete the character under the cursor? 
+- question: In vim, How do you delete the character under the cursor? 
   answer: x
 
-- question: How do you enter insert mode? 
+- question: In vim, How do you enter insert mode? 
   answer: i
 
-- question: How do you append text to the end of a line? 
+- question: In vim, How do you append text to the end of a line? 
   answer: A
 
-- question: How do you save the file and exit? 
+- question: In vim, How do you save the file and exit? 
   answer: :wq
 
-- question: How do you open a file in vim from the command prompt? 
+- question: In vim, How do you open a file in vim from the command prompt? 
   answer: vim <filename>
 
-- question: How do you cancel an unwanted and partially completed command? 
+- question: In vim, How do you cancel an unwanted and partially completed command? 
   answer: esc
 
-- question: How do you delete a whole word? 
+- question: In vim, How do you delete a whole word? 
   answer: dw
 
-- question: How do you delete until the end of the line? 
+- question: In vim, How do you delete until the end of the line? 
   answer: d$
 
-- question: What operator deletes text? 
+- question: In vim, What operator deletes text? 
   answer: d
 
-- question: What motion will operate until the start of the next word, EXCLUDING its first character? 
+- question: In vim, What motion will operate until the start of the next word, EXCLUDING its first character? 
   answer: w
 
-- question: What motion will operate to the end of the current word, INCLUDING the last character? 
+- question: In vim, What motion will operate to the end of the current word, INCLUDING the last character? 
   answer: e
 
-- question: What motion will operate to the end the line, INCLUDING the last character? 
+- question: In vim, What motion will operate to the end the line, INCLUDING the last character? 
   answer: $
 
-- question: What happens if you press a motion key while in normal mode? 
+- question: In vim, What happens if you press a motion key while in normal mode? 
   answer: the cursor will move as specified
 
-- question: How do you repeat a motion a set number of times? 
+- question: In vim, How do you repeat a motion a set number of times? 
   answer: prefix the motion with a number
 
-- question: How do you move the cursor to the beginning of a line (incl. whitespace)? 
+- question: In vim, How do you move the cursor to the beginning of a line (incl. whitespace)? 
   answer: 0
 
-- question: How do you repeat an operator and a motion? 
+- question: In vim, How do you repeat an operator and a motion? 
   answer: <operator> <number> <motion>
 
-- question: How do you delete a whole line? 
+- question: In vim, How do you delete a whole line? 
   answer: dd
 
-- question: How you delete a given number of lines 
+- question: In vim, How you delete a given number of lines 
   answer: <number> dd
 
-- question: How do you undo the last command? 
+- question: In vim, How do you undo the last command? 
   answer: u
 
-- question: How do you return a line to its origional state? 
+- question: In vim, How do you return a line to its origional state? 
   answer: U
 
-- question: How do you redo? 
+- question: In vim, How do you redo? 
   answer: CTRL-R
 
-- question: How do you put previously deleted text after the cursor? 
+- question: In vim, How do you put previously deleted text after the cursor? 
   answer: p
 
-- question: How do you replace the character at the cursor? 
+- question: In vim, How do you replace the character at the cursor? 
   answer: r <character>
 
-- question: How do you change until the end of a word? 
+- question: In vim, How do you change until the end of a word? 
   answer: ce
 
-- question: What operator changes text? 
+- question: In vim, What operator changes text? 
   answer: c
 
-- question: How do you show your location in the file and the file status? 
+- question: In vim, How do you show your location in the file and the file status? 
   answer: CTRL-G
 
-- question: How do you move the cursor to the bottom of a file? 
+- question: In vim, How do you move the cursor to the bottom of a file? 
   answer: G
 
-- question: How do you move the cursor to the top of the file? 
+- question: In vim, How do you move the cursor to the top of the file? 
   answer: gg
 
-- question: How do you move to a specific line number? 
+- question: In vim, How do you move to a specific line number? 
   answer: <number> G
 
-- question: How can you search for a phrase? 
+- question: In vim, How can you search for a phrase? 
   answer: /<phrase><ENTER>
 
-- question: After searching for a phrase, how do you search for the phrase again? 
+- question: In vim, After searching for a phrase, how do you search for the phrase again? 
   answer: n
 
-- question: After searching for a phrase, how do you search for the phrase again in the opposite direction? 
+- question: In vim, After searching for a phrase, how do you search for the phrase again in the opposite direction? 
   answer: N
 
-- question: How do you search for a phrase in the backwards direction? 
+- question: In vim, How do you search for a phrase in the backwards direction? 
   answer: ?<phrase><enter>
 
-- question: After searching for a phrase, how can you return to where you came from?  
+- question: In vim, After searching for a phrase, how can you return to where you came from?  
   answer: CTRL-O
 
-- question: After moving the cursor to a (, [, or {, how can you move the cursor to the matching ), ], or }? 
+- question: In vim, After moving the cursor to a (, [, or {, how can you move the cursor to the matching ), ], or }? 
   answer: %
 
-- question: How do you substitute one instance of the text 'new' for 'old'? 
+- question: In vim, How do you substitute one instance of the text 'new' for 'old'? 
   answer: :s/old/new
 
-- question: How do you substitute all instances of the text 'new' for 'old'? 
+- question: In vim, How do you substitute all instances of the text 'new' for 'old'? 
   answer: :s/old/new/g
 
-- question: How do you substitute all instances of the text 'new' for 'old' between two line numbers? 
+- question: In vim, How do you substitute all instances of the text 'new' for 'old' between two line numbers? 
   answer: :<linenumber>,<linenumber>s/old/new/g
 
-- question: How do you substitute all instances of the text 'new' for 'old' with a confirmation for each occurance? 
+- question: In vim, How do you substitute all instances of the text 'new' for 'old' with a confirmation for each occurance? 
   answer: :s/old/new/gc
 
-- question: How do you execute an external shell command? 
+- question: In vim, How do you execute an external shell command? 
   answer: :!<command><ENTER>
 
-- question: How do you write to a specific filename? 
+- question: In vim, How do you write to a specific filename? 
   answer: :w <filename>
 
-- question: How do you save part of a file to a new file? 
+- question: In vim, How do you save part of a file to a new file? 
   answer: v <motion> :w <filename>
 
-- question: How do you insert the contents of a file? 
+- question: In vim, How do you insert the contents of a file? 
   answer: :r <filename>
 
-- question: How do you insert text returned from an external command? 
+- question: In vim, How do you insert text returned from an external command? 
   answer: :r !<command>
 
-- question: How do you open a line below the cursor and enter insert mode? 
+- question: In vim, How do you open a line below the cursor and enter insert mode? 
   answer: o
 
-- question: How do you open a line above the cursor and enter insert mode? 
+- question: In vim, How do you open a line above the cursor and enter insert mode? 
   answer: O
 
-- question: How do you enter insert mode AFTER the cursor? 
+- question: In vim, How do you enter insert mode AFTER the cursor? 
   answer: a
 
-- question: How do you replace more than one character? 
+- question: In vim, How do you replace more than one character? 
   answer: R
 
-- question: How do you copy (yank) selected text? 
+- question: In vim, How do you copy (yank) selected text? 
   answer: y
 
-- question: How do you paste copied text below the current line? 
+- question: In vim, How do you paste copied text below the current line? 
   answer: p
 
-- question: How do you set an option? 
+- question: In vim, How do you set an option? 
   answer: :set <option>
 
-- question: What option sets case to be ignored in a search? 
+- question: In vim, What option sets case to be ignored in a search? 
   answer: ic
 
-- question: How do you remove highlighting from search matches? 
+- question: In vim, How do you remove highlighting from search matches? 
   answer: :nohlsearch
 
-- question: How do you do a case-insensitive search for a phrase for one time only?
+- question: In vim, How do you do a case-insensitive search for a phrase for one time only?
   answer: /<phrase>\c
 
-- question: How do you make a large top banner? 
+- question: In vim, How do you make a large top banner? 
   answer: :r !figlet "<text>"
 
-- question: How do you make a smaller topic banner? 
+- question: In vim, How do you make a smaller topic banner? 
   answer: :r !figlet -f smslant "<text>"
 
-- question: How do you open another file for editing? 
+- question: In vim, How do you open another file for editing? 
   answer: :e <filename>
 
-- question: How do you open a new file for editing in a horizontally split pane?
+- question: In vim, How do you open a new file for editing in a horizontally split pane?
   answer: :split <filename>
 
-- question: How do you move up one pane? 
+- question: In vim, How do you move up one pane? 
   answer: CTRL-W UP ARROW
 
-- question: How do you cycle to the next pane? 
+- question: In vim, How do you cycle to the next pane? 
   answer: CTRL-W-W 
 
-- question: How do you maximize the current pane? 
+- question: In vim, How do you maximize the current pane? 
   answer: CTRL-W_
 
-- question: How do you make all panes equal size? 
+- question: In vim, How do you make all panes equal size? 
   answer: CTRL-W=
 
-- question: How do you increase the current pane size by 10 lines? 
+- question: In vim, How do you increase the current pane size by 10 lines? 
   answer: 10 CTRL-W+
 
-- question: How do you open a new file for editing in a vertically split pane?
+- question: In vim, How do you open a new file for editing in a vertically split pane?
   answer: :vsplit <filename>
 
-- question: How do you open an existing file in read only mode in a horizontally split pane?
+- question: In vim, How do you open an existing file in read only mode in a horizontally split pane?
   answer: :sview <filename>
 
-- question: How do you close the current pane? 
+- question: In vim, How do you close the current pane? 
   answer: :hide
 
-- question: How do you close all panes besides the active pane? 
+- question: In vim, How do you close all panes besides the active pane? 
   answer: :only
 
-- question: How do you show the current buffers? 
+- question: In vim, How do you show the current buffers? 
   answer: :ls
 
-- question: How do you open a buffer number in the current pane? 
+- question: In vim, How do you open a buffer number in the current pane? 
   answer: :b <number>
 
-- question: How do you scroll up one line? 
+- question: In vim, How do you scroll up one line? 
   answer: CTRL-E
 
-- question: How do you scroll down one line? 
+- question: In vim, How do you scroll down one line? 
   answer: CTRL-Y
 
-- question: How do you scroll down one page? 
+- question: In vim, How do you scroll down one page? 
   answer: CTRL-F
 
-- question: How do you scroll up one page? 
+- question: In vim, How do you scroll up one page? 
   answer: CTRL-B
 
-- question: How do you move the cursor to the top of the pane? 
+- question: In vim, How do you move the cursor to the top of the pane? 
   answer: H
 
-- question: How do you move the cursor to the middle of the pane? 
+- question: In vim, How do you move the cursor to the middle of the pane? 
   answer: M
 
-- question: How do you move the cursor to the bottom of the pane? 
+- question: In vim, How do you move the cursor to the bottom of the pane? 
   answer: L
 
-- question: How do you change an entire word from any position within that word? 
+- question: In vim, How do you change an entire word from any position within that word? 
   answer: caw
 
-- question: How do you delete all characters inside a word? 
+- question: In vim, How do you delete all characters inside a word? 
   answer: diw
 
-- question: What is the motion for in 
+- question: In vim, What is the motion for in 
   answer: i
 
-- question: What is the motion for untill ('till) 
+- question: In vim, What is the motion for untill ('till) 
   answer: t
 
-- question: What is the motion for find? 
+- question: In vim, What is the motion for find? 
   answer: f
 
-- question: What is the motion for find backwards? 
+- question: In vim, What is the motion for find backwards? 
   answer: F
 
-- question: How do you yank all text inside parenthesis? 
+- question: In vim, How do you yank all text inside parenthesis? 
   answer: yi)
 
-- question: How do you visually select all text inside doublequotes including doublequotes? 
+- question: In vim, How do you visually select all text inside doublequotes including doublequotes? 
   answer: va"
 
-- question: How do you repeat your last command? 
+- question: In vim, How do you repeat your last command? 
   answer: .
 
-- question: Why should you always strive to do an action with just one command? 
+- question: In vim, Why should you always strive to do an action with just one command? 
   answer: so you can repeat the command with "."
 
-- question: How do you yank an entire line? 
+- question: In vim, How do you yank an entire line? 
   answer: yy
 
-- question: Whats a shortcut for deleting until the end of the line? 
+- question: In vim, Whats a shortcut for deleting until the end of the line? 
   answer: D
 
-- question: How do you change until the end of the line? 
+- question: In vim, How do you change until the end of the line? 
   answer: C
 
-- question: How do you move to the first non-whitespace character in a line? 
+- question: In vim, How do you move to the first non-whitespace character in a line? 
   answer: ^
 
-- question: How do you move to the end of a line? 
+- question: In vim, How do you move to the end of a line? 
   answer: $
 
-- question: How do you move to the beginning of a line and enter insert mode? 
+- question: In vim, How do you move to the beginning of a line and enter insert mode? 
   answer: I
 
-- question: How do you paste above the current line? 
+- question: In vim, How do you paste above the current line? 
   answer: P
 
-- question: How do you revert the state of a file by a given number of minutes? 
+- question: In vim, How do you revert the state of a file by a given number of minutes? 
   answer: :earlier <number>m
 
-- question: What is a macro? 
+- question: In vim, What is a macro? 
   answer: a sequence of commands recorded to a register
 
-- question: What registers can be used to record macros? 
+- question: In vim, What registers can be used to record macros? 
   answer: any alphabet character (abc...)
 
-- question: How do you record a macro? 
+- question: In vim, How do you record a macro? 
   answer: q<register><execute some commands>q
 
-- question: How do you execute a macro? 
+- question: In vim, How do you execute a macro? 
   answer: @<register>
 
-- question: How do you make a new tab? 
+- question: In vim, How do you make a new tab? 
   answer: :tabnew
 
-- question: How do you switch to the next tab? 
+- question: In vim, How do you switch to the next tab? 
   answer: :tabn
 
-- question: How do you switch to the previous tab? 
+- question: In vim, How do you switch to the previous tab? 
   answer: :tabp
 
-- question: How do you edit an existing file in a new tab? 
+- question: In vim, How do you edit an existing file in a new tab? 
   answer: tabedit <filename>
 
-- question: Whats a shortcut way to switch to the next tab? 
+- question: In vim, Whats a shortcut way to switch to the next tab? 
   answer: gt
 
-- question: Whats a shortcut way to switch to the previous tab? 
+- question: In vim, Whats a shortcut way to switch to the previous tab? 
   answer: gT
 
-- question: What kind of marks are global? 
+- question: In vim, What kind of marks are global? 
   answer: uppercase
 
-- question: What kind of marks are file specific? 
+- question: In vim, What kind of marks are file specific? 
   answer: lowercase
 
-- question: How do you add a mark? 
+- question: In vim, How do you add a mark? 
   answer: m<alphabet character>
 
-- question: How do you go to a mark? 
+- question: In vim, How do you go to a mark? 
   answer: '<alphabet character>
 
-- question: How do you show all marks? 
+- question: In vim, How do you show all marks? 
   answer: :marks
 
-- question: What motion will move back to the beginning of a word? 
+- question: In vim, What motion will move back to the beginning of a word? 
   answer: b
 
 - question: In vim, what deletes the character to the left of the cursor?
