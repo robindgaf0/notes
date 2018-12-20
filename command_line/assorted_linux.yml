@@ -1,0 +1,2235 @@
+- question: "What command enables the services that we need for our web server?"
+  answer: "systemctl enable mysql nginx php7.1-fpm monit"
+
+
+- question: "In /etc/shadow, what does the first field display?"
+  answer: "user name"
+
+
+- question: "In /etc/shadow, what does the field after 'username' display?"
+  answer: "hash password"
+
+
+- question: "In /etc/shadow, what does the field after 'hash password' display?"
+  answer: "days since 01/01/1970 since last password change"
+
+
+- question: "In /etc/shadow, what does the field after 'days since 01/01/1970 since last password change' display?"
+  answer: "minimum days between password changes"
+
+
+- question: "In /etc/shadow, what does the field after 'minimum days between password changes' display?"
+  answer: "maximum days between password changes"
+
+
+- question: "In /etc/shadow, what does the field after 'maximum days between password changes' display?"
+  answer: "number of days before expiration that user is warned"
+
+
+- question: "In /etc/shadow, what does the field after 'number of days before expiration that user is warned' display?"
+  answer: "number of days after password expires that account is disabled"
+
+
+- question: "In /etc/shadow, what does the field after 'number of days after password expires that account is disabled' display?"
+  answer: "days after 01/01/1970 until account will be disabled (absolute)"
+
+
+- question: "In /etc/group, what does the first field display?"
+  answer: "group name"
+
+
+- question: "In /etc/group, what does the field after group namedisplay?"
+  answer: "password"
+
+
+- question: "In /etc/group, what does the field after password namedisplay?"
+  answer: "group id"
+
+
+- question: "In /etc/group, what does the field after group id namedisplay?"
+  answer: "group list"
+
+- question: "how do you set a hostname on your server?"
+  answer: "hostnamectl set-hostname &lt;hostname&gt;"
+
+- question: "In bash, How do you clear a full screen?"
+  answer: "clear"
+
+
+- question: "In bash, How to you quickly return to the beginning of the command you have typed?"
+  answer: "CTRL-A"
+
+
+- question: "In bash, how do you do a reverse history search?"
+  answer: "CTRL-R"
+
+
+- question: "In bash, How to you interrupt a command?"
+  answer: "CTRL-C"
+
+
+- question: "In bash, How do you create a symbolic link?"
+  answer: "ln -s [filename] [filenameLINK]"
+
+
+- question: "In bash, how do you print the first 10 lines in a file?"
+  answer: "head"
+
+
+- question: "In bash, how do you print the last 10 lines in a file?"
+  answer: "tail"
+
+
+- question: "In bash, how do you follow a log with tail?"
+  answer: "tail -f"
+
+
+- question: "In bash, how do you shutdown the computer?"
+  answer: "shutdown"
+
+
+- question: "In bash, how do you restart the computer?"
+  answer: "shutdown -r"
+
+
+- question: "In bash, how do you halt the computer?"
+  answer: "shutdown -h"
+
+
+- question: "In bash, how do you shutdown the computer IMMEDIATELY?"
+  answer: "shutdown now"
+
+
+- question: "In bash, how do you shutdown the computer with a timer?"
+  answer: "shutdown +&lt;num&gt;"
+
+
+- question: "In bash, how do you poweroff the computer?"
+  answer: "poweroff"
+
+
+- question: "In bash, how do you check who is on your machine?"
+  answer: "w"
+
+
+- question: "In bash, how do you use an abbreviated version of the 'w' command?"
+  answer: "who"
+
+
+- question: "In bash, what's the simplest way to monitor processes?"
+  answer: "top"
+
+
+- question: "In bash, how can you monitor whats happening on the network?"
+  answer: "netstat -tulpn"
+
+
+- question: "In bash, how do you autocomplete a command?"
+  answer: "tab"
+
+
+- question: "In bash, how can you move the cursor to the beginning of the line?"
+  answer: "CTRL-A"
+
+
+- question: "In bash, how can you move the cursor to the end of the line?"
+  answer: "CTRL-E"
+
+
+- question: "In bash, what number is STDIN?"
+  answer: "0"
+
+
+- question: "In bash, what number is STDOUT?"
+  answer: "1"
+
+
+- question: "In bash, what number is STDERR?"
+  answer: "2"
+
+
+- question: "In bash, how can you redirect output to a file?"
+  answer: "echo "text" 1&gt; [filename]"
+
+
+- question: "In bash, how can you redirect output to the bottom of an existing file?"
+  answer: "echo "text" &gt;&gt; [filename]"
+
+
+- question: "In bash, how can you redirect errors to a file?"
+  answer: "[command] 2&gt; [filename]"
+
+
+- question: "In bash, how can use use redirection to send some text with mail?"
+  answer: "mail -s "subject" [recipient] &lt; filename"
+
+
+- question: "In bash, how do you "pipe" output from one program to the input of another?"
+  answer: "[program1] | [program2]  (the '|' symbol is used to pipe.)"
+
+
+- question: "In bash, how can you pipe through 3 programs?"
+  answer: "prog | prog2 | prog3"
+
+
+- question: "In bash, how can you run a second program ONLY if the first program runssuccessfully?"
+  answer: "prog &amp;&amp; prog2"
+
+
+- question: "While using cat in bash, how can you cut each line in a list into two fieldson a ':' delimiter and only show the second field from each line?"
+  answer: "<br />cat filename | cut -d: -f2"
+
+
+- question: "While using cat in bash, how can you sort each line alphabetically?"
+  answer: "cat filename | sort -bf"
+
+
+- question: "While using cat in bash, how can you only print unique lines?"
+  answer: "cat filename | uniq"
+
+
+- question: "In bash, how can you get a word count of a file?"
+  answer: "wc filename"
+
+
+- question: "In bash, how can you find some text in a file and return the line the text islocated on?"
+  answer: "cat filename | grep [some text]"
+
+
+- question: "In bash, how can you search all files in working directory for some text?"
+  answer: "grep [some text] ./*"
+
+
+- question: "In bash, how can you search all files in working directory for some textand list found lines excluding any duplicates?"
+  answer: "grep [some text] ./* | uniq"
+
+
+- question: "In bash, how can you search all files in working directory for some text,list found lines excluding any duplicates, and finally cut the returnedtext on the delimiting ':' to show only the text in field 1?"
+  answer: "grep [some text] ./* | uniq | cut -d: -f1"
+
+
+- question: "On debian based systems, how can you use bash to update the system?"
+  answer: "sudo apt-get update"
+
+
+- question: "On debian based systems, how can you use bash to upgrade the system?"
+  answer: "sudo apt-get upgrade"
+
+
+- question: "On debian based systems, how can you use bash to install a package?"
+  answer: "sudo apt-get install [packagename]"
+
+
+- question: "On debian based systems, how can you use bash to search apt-get repos for a paticular package?"
+  answer: "apt-cache search [packagename]"
+
+
+- question: "On debian based systems, how can you check the apt sourcelist?"
+  answer: "cat /etc/apt/sources.list"
+
+
+- question: "When using apt-get upgrade, how can you choose to forgoe user confirmation?"
+  answer: "apt-get -y upgrade"
+
+
+- question: "How can you use apt-get to remove some software?"
+  answer: "apt-get remove &lt;software&gt;"
+
+
+- question: "The unix permissions model consists of what three types of permissions?"
+  answer: "read, write, and execute"
+
+
+- question: "When listing directory with "ls -l" the read, write, and execute permissionsare displayed from left to right for which three types of users?"
+  answer: "the owner, users in the owner's group, and everyone else (other)"
+
+
+- question: "In bash, what command is used to change the permissions of a file?"
+  answer: "chmod xxx"
+
+
+- question: "What chmod bit value sets the permissions to "read, write, execute"?"
+  answer: "7"
+
+
+- question: "What chmod bit value sets the permissions to "read, write"?"
+  answer: "6"
+
+
+- question: "What chmod bit value sets the permissions to "read, execute"?"
+  answer: "5"
+
+
+- question: "What chmod bit value sets the permissions to "read"?"
+  answer: "4"
+
+
+- question: "What chmod bit value sets the permissions to "write, execute"?"
+  answer: "3"
+
+
+- question: "What chmod bit value sets the permissions to "write"?"
+  answer: "2"
+
+
+- question: "What chmod bit value sets the permissions to "execute"?"
+  answer: "1"
+
+
+- question: "What chmod bit value sets the permissions to "No Rights At All"?"
+  answer: " 0"
+
+
+- question: "On Debian based systems, where can you edit default permissions for newlycreated files?"
+  answer: "/etc/login.defs"
+
+
+- question: "On Debian based systems, what line in /etc/login.defs sets the defaultpermissions?"
+  answer: "UMASK"
+
+
+- question: "On Debian based systems, what is different about the values used for setting thedefault permissions and using chmod command?"
+  answer: "When setting default permissions, the values stated are disabled."
+
+
+- question: "In bash, how can you set the permissions for a folder and everything in it?"
+  answer: "chmod -R xxx dir"
+
+
+- question: "In bash, how can you change the owner of a directory?"
+  answer: "chown owner:group dirname"
+
+
+- question: "What is everything made of in linux?"
+  answer: "objects/files"
+
+
+- question: "What does every object have?"
+  answer: "an owner"
+
+
+- question: "Generally, who owns an object?"
+  answer: "it's creator"
+
+
+- question: "Who can act as the owner of any object?"
+  answer: "superuser (root)"
+
+
+- question: "How can a process that requires special permissions be run?"
+  answer: "run as root"
+
+
+- question: "When ls -l is run, what two names are listed after the permissions andnumber of links?"
+  answer: "owner name and owners group"
+
+
+- question: "What are all users members of?"
+  answer: "a group"
+
+
+- question: "What group does root belong to?"
+  answer: "root"
+
+
+- question: "In Linux, How can you tell what user you are?"
+  answer: "whoami or id"
+
+
+- question: "How do you become root?"
+  answer: "sudo -i"
+
+
+- question: "In /etc/passwd, what do each of the fields display?"
+  answer: "1.user name2.an x in place of a password3.user id4.default group id5.comment field6.home directory7.user shell"
+
+
+- question: "In /etc/shadow, what do the fields display?"
+  answer: "1.user name2.hash password3.days since 01/01/1970 since last password change4.minimum days between password changes5.maximum days between password changes6.number of days before expiration that user is warned7.number of days after password expires that account is disabled8.days after 01/01/1970 until account will be disabled (absolute)"
+
+
+- question: "In /etc/shadow, what does a '*' symbol mean in the password field?"
+  answer: "user cannot login"
+
+
+- question: "In /etc/shadow, how can you manualy disable a user?"
+  answer: "add an '!' symbol right before the initial '$' of the user's password."
+
+
+- question: "In /etc/group, what do the fields display?"
+  answer: "1.group name2.password3.group id4.group list"
+
+
+- question: "In bash, what command is used to delete a user?"
+  answer: "userdel"
+
+
+- question: "What is a typical usage example of the useradd command?"
+  answer: "<br />useradd -m -d [/home/userdir] -u [userid] -g [groupid] -s /bin/bash [username]"
+
+
+- question: "In bash, how do you give a new user a password?"
+  answer: "passwd [username]"
+
+
+- question: "In bash, how can you use grep to find a user's group?"
+  answer: "grep username /etc/group"
+
+
+- question: "In bash, how can you lock a user's account?"
+  answer: "usermod -L [username]"
+
+
+- question: "In bash, how can you unlock a user's account?"
+  answer: "usermod -U [username]"
+
+
+- question: "In bash, how can you delete a user's account?"
+  answer: "userdel [username]"
+
+
+- question: "After deleting a user's account with userdel, what must the admin deletemanually?"
+  answer: "the deleted user's home directory (rm -rf /home/userdir)"
+
+
+- question: "In bash, what command allows for adding a batch of users at once?"
+  answer: "newusers"
+
+
+- question: "What command adds a new user via a wizard?"
+  answer: "adduser &lt;username&gt;"
+
+
+- question: "What is a low level, scriptable command for adding new users?"
+  answer: "useradd"
+
+
+- question: "How can you change from root to a specific user?"
+  answer: "su - &lt;username&gt;"
+
+
+- question: "How do return to root from a specific website user?"
+  answer: "CTRL-D"
+
+
+- question: "What is a process?"
+  answer: "Any application, shell command or any program spawned by the kernel"
+
+
+- question: "What are two parts or a process?"
+  answer: "the address space and kernel data structures"
+
+
+- question: "What is address space?"
+  answer: "a piece of physical memory (RAM) that a process gets to write to"
+
+
+- question: "If a process is not given an 'absolute' address space, what will if be given instead?"
+  answer: "a 'virtual' address"
+
+
+- question: "What gives a process it's address space?"
+  answer: "the kernel"
+
+
+- question: "What are kernel data strucures?"
+  answer: "(3 things)Information stored in physical memory thatthe kernel needs in order to identify, spawn and control processes."
+
+
+- question: "How are processes identified?"
+  answer: "by the process id aka 'PID'"
+
+
+- question: "What is a process ID?"
+  answer: "a unique number which can be used to refer to each process"
+
+
+- question: "Which process always has a PID of 1?"
+  answer: "init"
+
+
+- question: "What is the init process?"
+  answer: "the first initial process that is spawned on boot-up"
+
+
+- question: "What does the init process do?"
+  answer: "it spawns all subsequent processes to start linux"
+
+
+- question: "What PID is assigned when a process is spawned?"
+  answer: "the next unique PID available"
+
+
+- question: "When is init NOT assigned the actual PID 1?"
+  answer: "On a virtual machine"
+
+
+- question: "The init process is considerd the what of all subsequent processes?"
+  answer: "original parent"
+
+
+- question: "What happens to a process if it's parent process dies?"
+  answer: "it is 're-parented' to init"
+
+
+- question: "How is a process' user identified?"
+  answer: "by the user id (UID)"
+
+
+- question: "What does the effective user id(EUID) do ?"
+  answer: "Allows a process to be given differentpermissions than the user who spawned it."
+
+
+- question: "Why are effective processes needed?"
+  answer: "to prevent user ran programs from damaging the file system"
+
+
+- question: "What is niceness?"
+  answer: "determines a process' priority for resource allocation"
+
+
+- question: "What does a high niceness number mean?"
+  answer: "low priority"
+
+
+- question: "describe a process' life cycle<br /><br />1. A parent process forks (clones itself) with different return values for it's child2. The child process will usually run an new program3. A process will usually have a system call 'exit' which will tell the kernel when it's done.4. The kernel will kill the process and notify the dead process' parent"
+  answer: "<None>"
+
+
+- question: "What does every process need to perform it's task?"
+  answer: "CPU time"
+
+
+- question: "What is responsible for scheduling when processes get time on the cpu?"
+  answer: "the kernel"
+
+
+- question: "What are the 4 states a process can be in?"
+  answer: "1. runnable2. sleeping3. zombie4. stopped"
+
+
+- question: "What does the process state runnable mean?"
+  answer: "eligible to be scheduled for cpu time"
+
+
+- question: "What does the process state sleeping mean?"
+  answer: "waiting for something"
+
+
+- question: "What does the process state stopped mean?"
+  answer: "process recieved stop signal and is<span class="Apple-tab-span" style="white-space: pre"> waiting for the cont (continue) signal to resume"
+
+
+- question: "What should be done when you have a lot of zombie processes?"
+  answer: "check the PPID for<span class="Apple-tab-span" style="white-space: pre"> the likely source of the problem"
+
+
+- question: "What is the most common tool for monitoring processes?"
+  answer: "top"
+
+
+- question: "What is the preferred tool for monitoring processes?"
+  answer: "htop"
+
+
+- question: "When using top how are processes automatically sorted?"
+  answer: "cpu usage"
+
+
+- question: "What are some advantages to using htop?"
+  answer: "see entire command used to launch a<span class="Apple-tab-span" style="white-space: pre"> process, send signals directly from htop to a process"
+
+
+- question: "How can you send a signal from htop directly to a signal?"
+  answer: "1. scroll to the process2. F9 (kill)3. scroll to select signal4. enter"
+
+
+- question: "In bash, how can you run a program with a set niceness?"
+  answer: "nice -n [numvalue] [program]"
+
+
+- question: "In bash, how can you set the niceness of an active process?"
+  answer: "renice [numvalue] [PID]"
+
+
+- question: "What is the range of the linux niceness scale?"
+  answer: "-20 to 19"
+
+
+- question: "What is the first thing to do when a WHOLE SYSTEM is working slowly?"
+  answer: "run top / htop"
+
+
+- question: "Where does the kernel provide the state of current processes?"
+  answer: "/proc/"
+
+
+- question: "What kind of filesystem is proc?"
+  answer: "virtual"
+
+
+- question: "In /proc, what do the numbered files' numbers represent?"
+  answer: "PID"
+
+
+- question: "What do you need to do before working in /proc/?"
+  answer: "become root"
+
+
+- question: "What is strace?"
+  answer: "<br />a program that allows you to attach to a process and get detailsabout its operation"
+
+
+- question: "What API stand for?"
+  answer: "application programming interface"
+
+
+- question: "What is the Application Programming Interface?"
+  answer: "a system of tools and resources in an operating system, enabling developers to create software applications."
+
+
+- question: "What does linux run through the filesystem?"
+  answer: "basically everything"
+
+
+- question: "How does the machine's hardware comunicate to the kernel?"
+  answer: "through the filesystem"
+
+
+- question: "what is udevd?"
+  answer: "a system daemon that detects and installs new hardware devices"
+
+
+- question: "What is a daemon?"
+  answer: "a process that runs in the background autonomously."
+
+
+- question: "What is at the very top of the filesystem?"
+  answer: "root"
+
+
+- question: "what does an absolute path start with?"
+  answer: "/"
+
+
+- question: "What is /etc/?"
+  answer: "a folder for storing all config files on the system"
+
+
+- question: "If a program is running but behaving strangely, what should you check first?"
+  answer: "the .conf file"
+
+
+- question: "What is /sbin/?"
+  answer: "a folder for storing the sytem binary files"
+
+
+- question: "What is /bin/?"
+  answer: "a folder for storing regular binary files"
+
+
+- question: "What is /tmp/?"
+  answer: "a folder to store temporary files"
+
+
+- question: "What happens to stuff in /tmp/ on shutdown or restart?"
+  answer: "it's erased"
+
+
+- question: "What is /home/?"
+  answer: "a folder to contain users' home folders"
+
+
+- question: "Where is root's home?"
+  answer: "/root"
+
+
+- question: "what is /lib/?"
+  answer: "a folder to store shared libraries."
+
+
+- question: "How can learn more about the file system?"
+  answer: "man hier"
+
+
+- question: "In the filesystem, where the base operating system commands located?"
+  answer: "/bin/"
+
+
+- question: "In the filesystem, where are all the configuration files located?"
+  answer: "/etc/"
+
+
+- question: "In the filesystem, where is the kernel and bootloader located?"
+  answer: "/boot/"
+
+
+- question: "In the filesytem, where are all of the machine's physical devices located?"
+  answer: "/dev/"
+
+
+- question: "In /dev/ what does a sda[num] represent?"
+  answer: "hard disk"
+
+
+- question: "In a /dev/sda[num] file, what does the number represent?"
+  answer: "partition number"
+
+
+- question: "In the filesystem, where are all the user home directories located?"
+  answer: "/home/"
+
+
+- question: "In the filesystem, where are the dynamically linked libraries located?"
+  answer: "/lib/"
+
+
+- question: "What are dynamically linked libraries?"
+  answer: "resources any program can accessto enable functionality"
+
+
+- question: "In ubuntu, where does the auto-mounted stuff go?"
+  answer: "/media/"
+
+
+- question: "On other linux systems, where does the auto-mounted stuff go?"
+  answer: "/mnt/"
+
+
+- question: "Where is optional software sometimes located?"
+  answer: "/opt/"
+
+
+- question: "If you're compiling your own software, where would you usually store it?"
+  answer: "/opt/"
+
+
+- question: "In the filesystem, where are the current system processes located?"
+  answer: "/proc/"
+
+
+- question: "In the filesystem, where would you look for information on processes thatare currently running?"
+  answer: "/proc/"
+
+
+- question: "In the filesystem, where are commands needed to boot the sysem located?"
+  answer: "/sbin/"
+
+
+- question: "In the filesystem, where are the temporary files located?"
+  answer: "/temp/"
+
+
+- question: "In the filesystem, only what should be stored in the /usr/ directory?"
+  answer: "sharable, read only data"
+
+
+- question: "In the filesystem, where is sharable application data stored?"
+  answer: "/usr/share/"
+
+
+- question: "where would files specifically needed on a factory made machine be storedbefore leaving the factory?"
+  answer: "/usr/share/"
+
+
+- question: "In the filesystem, where is the system log located?"
+  answer: "/var/log/"
+
+
+- question: "What does it mean when an ip address begins with a 10?"
+  answer: "it's a private address"
+
+
+- question: "What does it mean when an address is private?"
+  answer: "the address can't be reachedfrom the outside (world wide web)."
+
+
+- question: "If you want your machine accessed from the web, what kind of ip address do youneed?"
+  answer: "public ip address"
+
+
+- question: "In bash, how can you use SSH to connect to a server as root?"
+  answer: "ssh root@[ip address]"
+
+
+- question: "If how to you escape a hanging ssh session?"
+  answer: "press [enter], then '~', then '.'"
+
+
+- question: "In bash, how can you change the root password?"
+  answer: "passwd root"
+
+
+- question: "What is the primary tool for managing processes on modern linux distros?"
+  answer: "systemd"
+
+
+- question: "On older linux and unix systems, what command is used to manage services and logs?"
+  answer: "service"
+
+
+- question: "Sometimes services' names are changed on update and cause your old systemctlcommands to stop working. how can you find the new verion of the service?"
+  answer: "systemctl list-unit-files | grep [servicename]"
+
+
+- question: "What systemd command is used to manage services?"
+  answer: "systemctl"
+
+
+- question: "What systemd command is used to manage and parse logs?"
+  answer: "journalctl"
+
+
+- question: "How would you use systemd to show the status of mysql?"
+  answer: "systemctl status mysql"
+
+
+- question: "What command starts the services that we need for our web server?"
+  answer: "systemctl start nginx php7.1-fpm monit"
+
+
+- question: "What systemctl command makes sure a unit starts on boot?"
+  answer: "enable"
+
+
+- question: "What systemctl command is the opposite of enable?"
+  answer: "disable"
+
+
+- question: "What systemctl command will start a unit immediatly, but not automaticallystart at the next boot?"
+  answer: "start"
+
+
+- question: "What systemctl command stops a running unit, but will not prevent it's startingat boot?"
+  answer: "stop"
+
+
+- question: "What systemctl command re-reads the program configuration files?"
+  answer: "reload"
+
+
+- question: "What systemctl command kills the process and starts it again, re-reading theconfig files?"
+  answer: "restart"
+
+
+- question: "What systemctl command checks the status of a unit, showing the last few linesof log output?"
+  answer: "status"
+
+
+- question: "What journalctl command gets information on a specific unit?"
+  answer: "journalctl -u &lt;unit&gt;"
+
+
+- question: "After installing the required software packages for our server, what is required for each pieceof software to work together?"
+  answer: "edit the config files"
+
+
+- question: "When using less, how can you run a case-sensitive search?"
+  answer: "/&lt;text&gt;"
+
+
+- question: "What is ssh's default port?"
+  answer: "22"
+
+
+- question: "What does IPC stand for?"
+  answer: "Interprocess Communication"
+
+
+- question: "IPC is based on the idea that in Linux and Unix, everything is a ____file"
+  answer: "<None>"
+
+
+- question: "What is a 'socket' file?"
+  answer: "a file where processes can read and write information<span class="Apple-tab-span" style="white-space: pre"> from and to each other in real time"
+
+
+- question: "How does nginx and php-fpm communicate?"
+  answer: "through a special socket file"
+
+
+- question: "What is Normal file?"
+  answer: "simple file holding text, image data, etc"
+
+
+- question: "What is a Directory file?"
+  answer: "a file that can hold other files"
+
+
+- question: "What is a Link file?"
+  answer: "a shortcut - a symlink or hardlink to a certain location"
+
+
+- question: "What is a Pipe/named Pipe file?"
+  answer: "a file that moves information in a 'first in first out'<span class="Apple-tab-span" style="white-space: pre"> pattern."
+
+
+- question: "A Pipe file moves information in a way similar to the _ character in the command line|"
+  answer: "<None>"
+
+
+- question: "What command creates a named pipe?"
+  answer: "mkfifo"
+
+
+- question: "What is a Character Device file?"
+  answer: "a file for input/output e.g. your terminal"
+
+
+- question: "What is a Block file?"
+  answer: "a file for representing a block device (hard drive)"
+
+
+- question: "What is a Unix socket?"
+  answer: "a socket file which is available on the local machine only"
+
+
+- question: "What advantage does a Unix socket have?"
+  answer: "very fast"
+
+
+- question: "What is a TCP socket?"
+  answer: "a socket that can be exposed to the network"
+
+
+- question: "What disadvantage does a TCP socket have?"
+  answer: "slower"
+
+
+- question: "What kind of socket does nginx and php-fpm shareunix socket"
+  answer: "<None>"
+
+
+- question: "What kind of socket does nginx and website visitors share?"
+  answer: "TCP socket"
+
+
+- question: "What can a database be thought of as?"
+  answer: "a super powerful spreadsheet"
+
+
+- question: "What advantage does a database have over a plain text file?"
+  answer: "much more efficient<span class="Apple-tab-span" style="white-space: pre"> at storing and retrieving data, much more robust"
+
+
+- question: "What do relational databases help model?"
+  answer: "real world concepts"
+
+
+- question: "When talking about databases, what is a table like?"
+  answer: "a spreadsheet"
+
+
+- question: "When talking about databases, what is a column?"
+  answer: "A field in a table"
+
+
+- question: "When talking about databases, what is a Record/Row?"
+  answer: "One complete set of data for<span class="Apple-tab-span" style="white-space: pre"> one instance of that 'thing'"
+
+
+- question: "What does it mean for a database to be relational?"
+  answer: "each field in a database can be<span class="Apple-tab-span" style="white-space: pre"> a part of any table in the database<br />"
+
+
+- question: "What does DNS stand for?"
+  answer: "Domain Name System"
+
+
+- question: "What can the DNS be compared to?"
+  answer: "an Internet Phone Book"
+
+
+- question: "What does the DNS do?"
+  answer: "maps domain names to ip addresses"
+
+
+- question: "What's the first thing that happens when you type a domain name into your browser?"
+  answer: "Your browser asks your OS to go fetch the IP address for that domain name"
+
+
+- question: "What happens if the domain name isnt cached anywhere?"
+  answer: "the ip is looked up recursively"
+
+
+- question: "What is the DNS record type 'A' for?"
+  answer: "addresses"
+
+
+- question: "What is the DNS record type 'NS' for?"
+  answer: "name servers for a specific domain"
+
+
+- question: "What is the DNS record type 'MX' for?"
+  answer: "mail servers for a specific domain"
+
+
+- question: "What is the first rule of system administration?"
+  answer: "dont run stuff"
+
+
+- question: "What is the second rule of system administration?"
+  answer: "if you MUST run stuff, dont<span class="Apple-tab-span" style="white-space: pre"> expose that stuff to the internet"
+
+
+- question: "What is the third rule of system administration?"
+  answer: "if you HAVE TO expose stuff,<span class="Apple-tab-span" style="white-space: pre"> secure that stuff as much as possible"
+
+
+- question: "What is the fourth rule of system administration?"
+  answer: "set up the system so that if<span class="Apple-tab-span" style="white-space: pre"> stuff is compromised, the damage that stuff can do is minimized"
+
+
+- question: "What is the fifth rule of system administration?"
+  answer: "monitor the system so you know<span class="Apple-tab-span" style="white-space: pre"> when stuff is misbehaving"
+
+
+- question: "What is the sixth rule of system administration?"
+  answer: "administrate the system so stuff<span class="Apple-tab-span" style="white-space: pre"> us up to date<br />"
+
+
+- question: "When editing config files, what command should you always run on the originalconfig file first?"
+  answer: "mv &lt;filename&gt; &lt;filename.ORIG&gt;"
+
+
+- question: "For security purposes how will wordpress be run?"
+  answer: "it will be run from by aspecific user."
+
+
+- question: "Why is running services from separate users necessary?"
+  answer: "<br />allows compromised servicesto be isolated, and allows for more specified permissions over simply runningas root - minimizing risk to the entire system."
+
+
+- question: "Where does the global nginx conf file live?"
+  answer: "/etc/nginx/nginx.conf"
+
+
+- question: "Why should you avoid putting site specific configuration into /etc/nginx/nginx.conf?"
+  answer: "<span class="Apple-tab-span" style="white-space:pre"> this is the .conf file for all sites on the hosting platform. Each Sitespecific configuration should should have its own file.<br />"
+
+
+- question: "Based on settings in the global .conf file, what command should we use to createour directory for site specific .conf files?"
+  answer: "mkdir -p /usr/share/nginx/cache/fcgi"
+
+
+- question: "What should you do whenever you edit your nginx config file?"
+  answer: "test your newconfig with nginx -t"
+
+
+- question: "After testing your new nginx .conf file, how do you reload the nginx server?"
+  answer: "systemctl reload nginx"
+
+
+- question: "In our hosting platform, What does the client talk to?"
+  answer: "the webserver"
+
+
+- question: "In our hosting platform, what does webserver talk to when it needs something?"
+  answer: "the php interpreter"
+
+
+- question: "Why does our platform need a php interpreter?"
+  answer: "wordpress is php based"
+
+
+- question: "Why do we need an fpm (fast process manager)?"
+  answer: "so the php interpreter can handle many requests quickly<br />"
+
+
+- question: "How does php load config files?"
+  answer: "It moves up, looking first for application conf files,then user conf files, and finally global conf files"
+
+
+- question: "Why do we need to disable cgi.fix_pathinfo in the php.ini file?"
+  answer: "huge security risk"
+
+
+- question: "What is the customary location to put webfiles?"
+  answer: "/var/www/"
+
+
+- question: "On our webhosting platform what location will substitute for /var/www/ as a place forour webfiles?"
+  answer: "/home/&lt;websitename&gt;/public_html/<br />"
+
+
+- question: "What webfile directory holds the admin backend for a wordpress site?"
+  answer: "wp-admin"
+
+
+- question: "What webfile directory holds the themes and uploads for a wordpress site?"
+  answer: "wp-content"
+
+
+- question: "What webfile directory holds the core application files for a wordpress site?"
+  answer: "wp-includes"
+
+
+- question: "What can you replace to fix a broken or hacked wordpress install?"
+  answer: "wp-admin and wp-includes"
+
+
+- question: "What wordpress webfile directory and file should definitly be backed up?"
+  answer: "wp-content and wp-config.php"
+
+
+- question: "After a security breach, what should you do with the mysql database's salts &amp; keys?"
+  answer: "replace them"
+
+
+- question: "If a one of your wordpress sites has an error, how can you turn on debug mode?"
+  answer: "<br />- vim /home/&lt;websitename&gt;/public_html/wp-config.php- go to the line "define('WP_DEBUG', false);" and change it to true<span class="Apple-tab-span" style="white-space: pre"> "
+
+
+- question: "When improving hosting platform performance, what should be prioritized?"
+  answer: "optimizing the cache"
+
+
+- question: "What file can you modify to optimize your global server settings?"
+  answer: "/etc/nginx/nginx.conf"
+
+
+- question: "If a specific site needs different server optimization settings from the ones in/etc/nginx/nginx.conf, how can you override the global settings?"
+  answer: "adjust settings in the site config file found in /etc/nginx/conf.d/"
+
+
+- question: "Whats an easy way to optimize your mysql database?"
+  answer: "mysqltuner"
+
+
+- question: "What is the first step in a process' lifecycle?"
+  answer: "A parent process forks (clones itself) with different return values for it's child"
+
+
+- question: "What is the next step in a process' lifecycle after a parent process forks (clones itself) with different return values for it's child?"
+  answer: "The child process will usually run an new program"
+
+
+- question: "What is the next step in a process' lifecycle after achild process runs a new program?"
+  answer: "A process will usually have a system call 'exit' which will tell the kernelwhen it's done."
+
+
+- question: "What is the next step in a process' lifecycle aftera process sends system 'exit'call?"
+  answer: "The kernel will kill the process and notify the dead process' parent"
+
+
+- question: "In /etc/passwd,what does the first field display?"
+  answer: "user name"
+
+
+- question: "In /etc/passwd,what does the field after 'username' display?"
+  answer: "an x in place of a password"
+
+
+- question: "In /etc/passwd, what does the field after the 'x' display?"
+  answer: "user id"
+
+
+- question: "In /etc/passwd, what does the field after 'user id' display?"
+  answer: "default group id"
+
+
+- question: "In /etc/passwd, what does the field after 'default group id' display?"
+  answer: "comment field"
+
+
+- question: "In /etc/passwd, what does the field after 'comment field' id' display?"
+  answer: "home directory"
+
+
+- question: "In /etc/passwd, what does the field after 'home directory' id' display?"
+  answer: "user shell"
+
+
+- question: "In python, how can you print the string "Hello World!"?"
+  answer: "print("Hello World!")"
+
+
+- question: "From bash, how can you run a python3.6 program called hello_world.py?"
+  answer: "python3.6 hello_world.py"
+
+- question: "In bash, How do you clear a full screen?"
+  answer: "clear"
+
+
+- question: "In bash, How to you quickly return to the beginning of the command you have typed?"
+  answer: "CTRL-A"
+
+
+- question: "In bash, how do you do a reverse history search?"
+  answer: "CTRL-R"
+
+
+- question: "In bash, How to you interrupt a command?"
+  answer: "CTRL-C"
+
+
+- question: "In bash, How do you create a symbolic link?"
+  answer: "ln -s [filename] [filenameLINK]"
+
+
+- question: "In bash, how do you print the first 10 lines in a file?"
+  answer: "head"
+
+
+- question: "In bash, how do you print the last 10 lines in a file?"
+  answer: "tail"
+
+
+- question: "In bash, how do you follow a log with tail?"
+  answer: "tail -f"
+
+
+- question: "In bash, how do you shutdown the computer?"
+  answer: "shutdown"
+
+
+- question: "In bash, how do you restart the computer?"
+  answer: "shutdown -r"
+
+
+- question: "In bash, how do you halt the computer?"
+  answer: "shutdown -h"
+
+
+- question: "In bash, how do you shutdown the computer IMMEDIATELY?"
+  answer: "shutdown now"
+
+
+- question: "In bash, how do you shutdown the computer with a timer?"
+  answer: "shutdown +&lt;num&gt;"
+
+
+- question: "In bash, how do you poweroff the computer?"
+  answer: "poweroff"
+
+
+- question: "In bash, how do you check who is on your machine?"
+  answer: "w"
+
+
+- question: "In bash, how do you use an abbreviated version of the 'w' command?"
+  answer: "who"
+
+
+- question: "In bash, what's the simplest way to monitor processes?"
+  answer: "top"
+
+
+- question: "In bash, how can you monitor whats happening on the network?"
+  answer: "netstat -tulpn"
+
+
+- question: "In bash, how do you autocomplete a command?"
+  answer: "tab"
+
+
+- question: "In bash, how can you move the cursor to the beginning of the line?"
+  answer: "CTRL-A"
+
+
+- question: "In bash, how can you move the cursor to the end of the line?"
+  answer: "CTRL-E"
+
+
+- question: "In bash, what number is STDIN?"
+  answer: "0"
+
+
+- question: "In bash, what number is STDOUT?"
+  answer: "1"
+
+
+- question: "In bash, what number is STDERR?"
+  answer: "2"
+
+
+- question: "In bash, how can you redirect output to a file?"
+  answer: "echo "text" 1&gt; [filename]"
+
+
+- question: "In bash, how can you redirect output to the bottom of an existing file?"
+  answer: "echo "text" &gt;&gt; [filename]"
+
+
+- question: "In bash, how can you redirect errors to a file?"
+  answer: "[command] 2&gt; [filename]"
+
+
+- question: "In bash, how can use use redirection to send some text with mail?"
+  answer: "mail -s "subject" [recipient] &lt; filename"
+
+
+- question: "In bash, how do you "pipe" output from one program to the input of another?"
+  answer: "[program1] | [program2]  (the '|' symbol is used to pipe.)"
+
+
+- question: "In bash, how can you pipe through 3 programs?"
+  answer: "prog | prog2 | prog3"
+
+
+- question: "In bash, how can you run a second program ONLY if the first program runssuccessfully?"
+  answer: "prog &amp;&amp; prog2"
+
+
+- question: "While using cat in bash, how can you cut each line in a list into two fieldson a ':' delimiter and only show the second field from each line?"
+  answer: "<br />cat filename | cut -d: -f2"
+
+
+- question: "While using cat in bash, how can you sort each line alphabetically?"
+  answer: "cat filename | sort -bf"
+
+
+- question: "While using cat in bash, how can you only print unique lines?"
+  answer: "cat filename | uniq"
+
+
+- question: "In bash, how can you get a word count of a file?"
+  answer: "wc filename"
+
+
+- question: "In bash, how can you find some text in a file and return the line the text islocated on?"
+  answer: "cat filename | grep [some text]"
+
+
+- question: "In bash, how can you search all files in working directory for some text?"
+  answer: "grep [some text] ./*"
+
+
+- question: "In bash, how can you search all files in working directory for some textand list found lines excluding any duplicates?"
+  answer: "grep [some text] ./* | uniq"
+
+
+- question: "In bash, how can you search all files in working directory for some text,list found lines excluding any duplicates, and finally cut the returnedtext on the delimiting ':' to show only the text in field 1?"
+  answer: "grep [some text] ./* | uniq | cut -d: -f1"
+
+
+- question: "On debian based systems, how can you use bash to update the system?"
+  answer: "sudo apt-get update"
+
+
+- question: "On debian based systems, how can you use bash to upgrade the system?"
+  answer: "sudo apt-get upgrade"
+
+
+- question: "On debian based systems, how can you use bash to install a package?"
+  answer: "sudo apt-get install [packagename]"
+
+
+- question: "On debian based systems, how can you use bash to search apt-get repos for a paticular package?"
+  answer: "apt-cache search [packagename]"
+
+
+- question: "On debian based systems, how can you check the apt sourcelist?"
+  answer: "cat /etc/apt/sources.list"
+
+
+- question: "When using apt-get upgrade, how can you choose to forgoe user confirmation?"
+  answer: "apt-get -y upgrade"
+
+
+- question: "How can you use apt-get to remove some software?"
+  answer: "apt-get remove &lt;software&gt;"
+
+
+- question: "The unix permissions model consists of what three types of permissions?"
+  answer: "read, write, and execute"
+
+
+- question: "When listing directory with "ls -l" the read, write, and execute permissionsare displayed from left to right for which three types of users?"
+  answer: "the owner, users in the owner's group, and everyone else (other)"
+
+
+- question: "In bash, what command is used to change the permissions of a file?"
+  answer: "chmod xxx"
+
+
+- question: "What chmod bit value sets the permissions to "read, write, execute"?"
+  answer: "7"
+
+
+- question: "What chmod bit value sets the permissions to "read, write"?"
+  answer: "6"
+
+
+- question: "What chmod bit value sets the permissions to "read, execute"?"
+  answer: "5"
+
+
+- question: "What chmod bit value sets the permissions to "read"?"
+  answer: "4"
+
+
+- question: "What chmod bit value sets the permissions to "write, execute"?"
+  answer: "3"
+
+
+- question: "What chmod bit value sets the permissions to "write"?"
+  answer: "2"
+
+
+- question: "What chmod bit value sets the permissions to "execute"?"
+  answer: "1"
+
+
+- question: "What chmod bit value sets the permissions to "No Rights At All"?"
+  answer: " 0"
+
+
+- question: "On Debian based systems, where can you edit default permissions for newlycreated files?"
+  answer: "/etc/login.defs"
+
+
+- question: "On Debian based systems, what line in /etc/login.defs sets the defaultpermissions?"
+  answer: "UMASK"
+
+
+- question: "On Debian based systems, what is different about the values used for setting thedefault permissions and using chmod command?"
+  answer: "When setting default permissions, the values stated are disabled."
+
+
+- question: "In bash, how can you set the permissions for a folder and everything in it?"
+  answer: "chmod -R xxx dir"
+
+
+- question: "In bash, how can you change the owner of a directory?"
+  answer: "chown owner:group dirname"
+
+
+- question: "What is everything made of in linux?"
+  answer: "objects/files"
+
+
+- question: "What does every object have?"
+  answer: "an owner"
+
+
+- question: "Generally, who owns an object?"
+  answer: "it's creator"
+
+
+- question: "Who can act as the owner of any object?"
+  answer: "superuser (root)"
+
+
+- question: "How can a process that requires special permissions be run?"
+  answer: "run as root"
+
+
+- question: "When ls -l is run, what two names are listed after the permissions andnumber of links?"
+  answer: "owner name and owners group"
+
+
+- question: "What are all users members of?"
+  answer: "a group"
+
+
+- question: "What group does root belong to?"
+  answer: "root"
+
+
+- question: "In Linux, How can you tell what user you are?"
+  answer: "whoami or id"
+
+
+- question: "How do you become root?"
+  answer: "sudo -i"
+
+
+- question: "In /etc/passwd, what do each of the fields display?"
+  answer: "1.user name2.an x in place of a password3.user id4.default group id5.comment field6.home directory7.user shell"
+
+
+- question: "In /etc/shadow, what do the fields display?"
+  answer: "1.user name2.hash password3.days since 01/01/1970 since last password change4.minimum days between password changes5.maximum days between password changes6.number of days before expiration that user is warned7.number of days after password expires that account is disabled8.days after 01/01/1970 until account will be disabled (absolute)"
+
+
+- question: "In /etc/shadow, what does a '*' symbol mean in the password field?"
+  answer: "user cannot login"
+
+
+- question: "In /etc/shadow, how can you manualy disable a user?"
+  answer: "add an '!' symbol right before the initial '$' of the user's password."
+
+
+- question: "In /etc/group, what do the fields display?"
+  answer: "1.group name2.password3.group id4.group list"
+
+
+- question: "In bash, what command is used to delete a user?"
+  answer: "userdel"
+
+
+- question: "What is a typical usage example of the useradd command?"
+  answer: "<br />useradd -m -d [/home/userdir] -u [userid] -g [groupid] -s /bin/bash [username]"
+
+
+- question: "In bash, how do you give a new user a password?"
+  answer: "passwd [username]"
+
+
+- question: "In bash, how can you use grep to find a user's group?"
+  answer: "grep username /etc/group"
+
+
+- question: "In bash, how can you lock a user's account?"
+  answer: "usermod -L [username]"
+
+
+- question: "In bash, how can you unlock a user's account?"
+  answer: "usermod -U [username]"
+
+
+- question: "In bash, how can you delete a user's account?"
+  answer: "userdel [username]"
+
+
+- question: "After deleting a user's account with userdel, what must the admin deletemanually?"
+  answer: "the deleted user's home directory (rm -rf /home/userdir)"
+
+
+- question: "In bash, what command allows for adding a batch of users at once?"
+  answer: "newusers"
+
+
+- question: "What command adds a new user via a wizard?"
+  answer: "adduser &lt;username&gt;"
+
+
+- question: "What is a low level, scriptable command for adding new users?"
+  answer: "useradd"
+
+
+- question: "How can you change from root to a specific user?"
+  answer: "su - &lt;username&gt;"
+
+
+- question: "How do return to root from a specific website user?"
+  answer: "CTRL-D"
+
+
+- question: "What is a process?"
+  answer: "Any application, shell command or any program spawned by the kernel"
+
+
+- question: "What are two parts or a process?"
+  answer: "the address space and kernel data structures"
+
+
+- question: "What is address space?"
+  answer: "a piece of physical memory (RAM) that a process gets to write to"
+
+
+- question: "If a process is not given an 'absolute' address space, what will if be given instead?"
+  answer: "a 'virtual' address"
+
+
+- question: "What gives a process it's address space?"
+  answer: "the kernel"
+
+
+- question: "What are kernel data strucures?"
+  answer: "(3 things)Information stored in physical memory thatthe kernel needs in order to identify, spawn and control processes."
+
+
+- question: "How are processes identified?"
+  answer: "by the process id aka 'PID'"
+
+
+- question: "What is a process ID?"
+  answer: "a unique number which can be used to refer to each process"
+
+
+- question: "Which process always has a PID of 1?"
+  answer: "init"
+
+
+- question: "What is the init process?"
+  answer: "the first initial process that is spawned on boot-up"
+
+
+- question: "What does the init process do?"
+  answer: "it spawns all subsequent processes to start linux"
+
+
+- question: "What PID is assigned when a process is spawned?"
+  answer: "the next unique PID available"
+
+
+- question: "When is init NOT assigned the actual PID 1?"
+  answer: "On a virtual machine"
+
+
+- question: "The init process is considerd the what of all subsequent processes?"
+  answer: "original parent"
+
+
+- question: "What happens to a process if it's parent process dies?"
+  answer: "it is 're-parented' to init"
+
+
+- question: "How is a process' user identified?"
+  answer: "by the user id (UID)"
+
+
+- question: "What does the effective user id(EUID) do ?"
+  answer: "Allows a process to be given differentpermissions than the user who spawned it."
+
+
+- question: "Why are effective processes needed?"
+  answer: "to prevent user ran programs from damaging the file system"
+
+
+- question: "What is niceness?"
+  answer: "determines a process' priority for resource allocation"
+
+
+- question: "What does a high niceness number mean?"
+  answer: "low priority"
+
+
+- question: "describe a process' life cycle<br /><br />1. A parent process forks (clones itself) with different return values for it's child2. The child process will usually run an new program3. A process will usually have a system call 'exit' which will tell the kernel when it's done.4. The kernel will kill the process and notify the dead process' parent"
+  answer: "<None>"
+
+
+- question: "What does every process need to perform it's task?"
+  answer: "CPU time"
+
+
+- question: "What is responsible for scheduling when processes get time on the cpu?"
+  answer: "the kernel"
+
+
+- question: "What are the 4 states a process can be in?"
+  answer: "1. runnable2. sleeping3. zombie4. stopped"
+
+
+- question: "What does the process state runnable mean?"
+  answer: "eligible to be scheduled for cpu time"
+
+
+- question: "What does the process state sleeping mean?"
+  answer: "waiting for something"
+
+
+- question: "What does the process state stopped mean?"
+  answer: "process recieved stop signal and is<span class="Apple-tab-span" style="white-space: pre"> waiting for the cont (continue) signal to resume"
+
+
+- question: "What should be done when you have a lot of zombie processes?"
+  answer: "check the PPID for<span class="Apple-tab-span" style="white-space: pre"> the likely source of the problem"
+
+
+- question: "What is the most common tool for monitoring processes?"
+  answer: "top"
+
+
+- question: "What is the preferred tool for monitoring processes?"
+  answer: "htop"
+
+
+- question: "When using top how are processes automatically sorted?"
+  answer: "cpu usage"
+
+
+- question: "What are some advantages to using htop?"
+  answer: "see entire command used to launch a<span class="Apple-tab-span" style="white-space: pre"> process, send signals directly from htop to a process"
+
+
+- question: "How can you send a signal from htop directly to a signal?"
+  answer: "1. scroll to the process2. F9 (kill)3. scroll to select signal4. enter"
+
+
+- question: "In bash, how can you run a program with a set niceness?"
+  answer: "nice -n [numvalue] [program]"
+
+
+- question: "In bash, how can you set the niceness of an active process?"
+  answer: "renice [numvalue] [PID]"
+
+
+- question: "What is the range of the linux niceness scale?"
+  answer: "-20 to 19"
+
+
+- question: "What is the first thing to do when a WHOLE SYSTEM is working slowly?"
+  answer: "run top / htop"
+
+
+- question: "Where does the kernel provide the state of current processes?"
+  answer: "/proc/"
+
+
+- question: "What kind of filesystem is proc?"
+  answer: "virtual"
+
+
+- question: "In /proc, what do the numbered files' numbers represent?"
+  answer: "PID"
+
+
+- question: "What do you need to do before working in /proc/?"
+  answer: "become root"
+
+
+- question: "What is strace?"
+  answer: "<br />a program that allows you to attach to a process and get detailsabout its operation"
+
+
+- question: "What API stand for?"
+  answer: "application programming interface"
+
+
+- question: "What is the Application Programming Interface?"
+  answer: "a system of tools and resources in an operating system, enabling developers to create software applications."
+
+
+- question: "What does linux run through the filesystem?"
+  answer: "basically everything"
+
+
+- question: "How does the machine's hardware comunicate to the kernel?"
+  answer: "through the filesystem"
+
+
+- question: "what is udevd?"
+  answer: "a system daemon that detects and installs new hardware devices"
+
+
+- question: "What is a daemon?"
+  answer: "a process that runs in the background autonomously."
+
+
+- question: "What is at the very top of the filesystem?"
+  answer: "root"
+
+
+- question: "what does an absolute path start with?"
+  answer: "/"
+
+
+- question: "What is /etc/?"
+  answer: "a folder for storing all config files on the system"
+
+
+- question: "If a program is running but behaving strangely, what should you check first?"
+  answer: "the .conf file"
+
+
+- question: "What is /sbin/?"
+  answer: "a folder for storing the sytem binary files"
+
+
+- question: "What is /bin/?"
+  answer: "a folder for storing regular binary files"
+
+
+- question: "What is /tmp/?"
+  answer: "a folder to store temporary files"
+
+
+- question: "What happens to stuff in /tmp/ on shutdown or restart?"
+  answer: "it's erased"
+
+
+- question: "What is /home/?"
+  answer: "a folder to contain users' home folders"
+
+
+- question: "Where is root's home?"
+  answer: "/root"
+
+
+- question: "what is /lib/?"
+  answer: "a folder to store shared libraries."
+
+
+- question: "How can learn more about the file system?"
+  answer: "man hier"
+
+
+- question: "In the filesystem, where the base operating system commands located?"
+  answer: "/bin/"
+
+
+- question: "In the filesystem, where are all the configuration files located?"
+  answer: "/etc/"
+
+
+- question: "In the filesystem, where is the kernel and bootloader located?"
+  answer: "/boot/"
+
+
+- question: "In the filesytem, where are all of the machine's physical devices located?"
+  answer: "/dev/"
+
+
+- question: "In /dev/ what does a sda[num] represent?"
+  answer: "hard disk"
+
+
+- question: "In a /dev/sda[num] file, what does the number represent?"
+  answer: "partition number"
+
+
+- question: "In the filesystem, where are all the user home directories located?"
+  answer: "/home/"
+
+
+- question: "In the filesystem, where are the dynamically linked libraries located?"
+  answer: "/lib/"
+
+
+- question: "What are dynamically linked libraries?"
+  answer: "resources any program can accessto enable functionality"
+
+
+- question: "In ubuntu, where does the auto-mounted stuff go?"
+  answer: "/media/"
+
+
+- question: "On other linux systems, where does the auto-mounted stuff go?"
+  answer: "/mnt/"
+
+
+- question: "Where is optional software sometimes located?"
+  answer: "/opt/"
+
+
+- question: "If you're compiling your own software, where would you usually store it?"
+  answer: "/opt/"
+
+
+- question: "In the filesystem, where are the current system processes located?"
+  answer: "/proc/"
+
+
+- question: "In the filesystem, where would you look for information on processes thatare currently running?"
+  answer: "/proc/"
+
+
+- question: "In the filesystem, where are commands needed to boot the sysem located?"
+  answer: "/sbin/"
+
+
+- question: "In the filesystem, where are the temporary files located?"
+  answer: "/temp/"
+
+
+- question: "In the filesystem, only what should be stored in the /usr/ directory?"
+  answer: "sharable, read only data"
+
+
+- question: "In the filesystem, where is sharable application data stored?"
+  answer: "/usr/share/"
+
+
+- question: "where would files specifically needed on a factory made machine be storedbefore leaving the factory?"
+  answer: "/usr/share/"
+
+
+- question: "In the filesystem, where is the system log located?"
+  answer: "/var/log/"
+
+
+- question: "What does it mean when an ip address begins with a 10?"
+  answer: "it's a private address"
+
+
+- question: "What does it mean when an address is private?"
+  answer: "the address can't be reachedfrom the outside (world wide web)."
+
+
+- question: "If you want your machine accessed from the web, what kind of ip address do youneed?"
+  answer: "public ip address"
+
+
+- question: "In bash, how can you use SSH to connect to a server as root?"
+  answer: "ssh root@[ip address]"
+
+
+- question: "If how to you escape a hanging ssh session?"
+  answer: "press [enter], then '~', then '.'"
+
+
+- question: "In bash, how can you change the root password?"
+  answer: "passwd root"
+
+
+- question: "What is the primary tool for managing processes on modern linux distros?"
+  answer: "systemd"
+
+
+- question: "On older linux and unix systems, what command is used to manage services and logs?"
+  answer: "service"
+
+
+- question: "Sometimes services' names are changed on update and cause your old systemctlcommands to stop working. how can you find the new verion of the service?"
+  answer: "systemctl list-unit-files | grep [servicename]"
+
+
+- question: "What systemd command is used to manage services?"
+  answer: "systemctl"
+
+
+- question: "What systemd command is used to manage and parse logs?"
+  answer: "journalctl"
+
+
+- question: "How would you use systemd to show the status of mysql?"
+  answer: "systemctl status mysql"
+
+
+- question: "What command starts the services that we need for our web server?"
+  answer: "systemctl start nginx php7.1-fpm monit"
+
+
+- question: "What systemctl command makes sure a unit starts on boot?"
+  answer: "enable"
+
+
+- question: "What systemctl command is the opposite of enable?"
+  answer: "disable"
+
+
+- question: "What systemctl command will start a unit immediatly, but not automaticallystart at the next boot?"
+  answer: "start"
+
+
+- question: "What systemctl command stops a running unit, but will not prevent it's startingat boot?"
+  answer: "stop"
+
+
+- question: "What systemctl command re-reads the program configuration files?"
+  answer: "reload"
+
+
+- question: "What systemctl command kills the process and starts it again, re-reading theconfig files?"
+  answer: "restart"
+
+
+- question: "What systemctl command checks the status of a unit, showing the last few linesof log output?"
+  answer: "status"
+
+
+- question: "What journalctl command gets information on a specific unit?"
+  answer: "journalctl -u &lt;unit&gt;"
+
+
+- question: "After installing the required software packages for our server, what is required for each pieceof software to work together?"
+  answer: "edit the config files"
+
+
+- question: "When using less, how can you run a case-sensitive search?"
+  answer: "/&lt;text&gt;"
+
+
+- question: "What is ssh's default port?"
+  answer: "22"
+
+
+- question: "What does IPC stand for?"
+  answer: "Interprocess Communication"
+
+
+- question: "IPC is based on the idea that in Linux and Unix, everything is a ____file"
+  answer: "<None>"
+
+
+- question: "What is a 'socket' file?"
+  answer: "a file where processes can read and write information<span class="Apple-tab-span" style="white-space: pre"> from and to each other in real time"
+
+
+- question: "How does nginx and php-fpm communicate?"
+  answer: "through a special socket file"
+
+
+- question: "What is Normal file?"
+  answer: "simple file holding text, image data, etc"
+
+
+- question: "What is a Directory file?"
+  answer: "a file that can hold other files"
+
+
+- question: "What is a Link file?"
+  answer: "a shortcut - a symlink or hardlink to a certain location"
+
+
+- question: "What is a Pipe/named Pipe file?"
+  answer: "a file that moves information in a 'first in first out'<span class="Apple-tab-span" style="white-space: pre"> pattern."
+
+
+- question: "A Pipe file moves information in a way similar to the _ character in the command line|"
+  answer: "<None>"
+
+
+- question: "What command creates a named pipe?"
+  answer: "mkfifo"
+
+
+- question: "What is a Character Device file?"
+  answer: "a file for input/output e.g. your terminal"
+
+
+- question: "What is a Block file?"
+  answer: "a file for representing a block device (hard drive)"
+
+
+- question: "What is a Unix socket?"
+  answer: "a socket file which is available on the local machine only"
+
+
+- question: "What advantage does a Unix socket have?"
+  answer: "very fast"
+
+
+- question: "What is a TCP socket?"
+  answer: "a socket that can be exposed to the network"
+
+
+- question: "What disadvantage does a TCP socket have?"
+  answer: "slower"
+
+
+- question: "What kind of socket does nginx and php-fpm shareunix socket"
+  answer: "<None>"
+
+
+- question: "What kind of socket does nginx and website visitors share?"
+  answer: "TCP socket"
+
+
+- question: "What can a database be thought of as?"
+  answer: "a super powerful spreadsheet"
+
+
+- question: "What advantage does a database have over a plain text file?"
+  answer: "much more efficient<span class="Apple-tab-span" style="white-space: pre"> at storing and retrieving data, much more robust"
+
+
+- question: "What do relational databases help model?"
+  answer: "real world concepts"
+
+
+- question: "When talking about databases, what is a table like?"
+  answer: "a spreadsheet"
+
+
+- question: "When talking about databases, what is a column?"
+  answer: "A field in a table"
+
+
+- question: "When talking about databases, what is a Record/Row?"
+  answer: "One complete set of data for<span class="Apple-tab-span" style="white-space: pre"> one instance of that 'thing'"
+
+
+- question: "What does it mean for a database to be relational?"
+  answer: "each field in a database can be<span class="Apple-tab-span" style="white-space: pre"> a part of any table in the database<br />"
+
+
+- question: "What does DNS stand for?"
+  answer: "Domain Name System"
+
+
+- question: "What can the DNS be compared to?"
+  answer: "an Internet Phone Book"
+
+
+- question: "What does the DNS do?"
+  answer: "maps domain names to ip addresses"
+
+
+- question: "What's the first thing that happens when you type a domain name into your browser?"
+  answer: "Your browser asks your OS to go fetch the IP address for that domain name"
+
+
+- question: "What happens if the domain name isnt cached anywhere?"
+  answer: "the ip is looked up recursively"
+
+
+- question: "What is the DNS record type 'A' for?"
+  answer: "addresses"
+
+
+- question: "What is the DNS record type 'NS' for?"
+  answer: "name servers for a specific domain"
+
+
+- question: "What is the DNS record type 'MX' for?"
+  answer: "mail servers for a specific domain"
+
+
+- question: "What is the first rule of system administration?"
+  answer: "dont run stuff"
+
+
+- question: "What is the second rule of system administration?"
+  answer: "if you MUST run stuff, dont<span class="Apple-tab-span" style="white-space: pre"> expose that stuff to the internet"
+
+
+- question: "What is the third rule of system administration?"
+  answer: "if you HAVE TO expose stuff,<span class="Apple-tab-span" style="white-space: pre"> secure that stuff as much as possible"
+
+
+- question: "What is the fourth rule of system administration?"
+  answer: "set up the system so that if<span class="Apple-tab-span" style="white-space: pre"> stuff is compromised, the damage that stuff can do is minimized"
+
+
+- question: "What is the fifth rule of system administration?"
+  answer: "monitor the system so you know<span class="Apple-tab-span" style="white-space: pre"> when stuff is misbehaving"
+
+
+- question: "What is the sixth rule of system administration?"
+  answer: "administrate the system so stuff<span class="Apple-tab-span" style="white-space: pre"> us up to date<br />"
+
+
+- question: "When editing config files, what command should you always run on the originalconfig file first?"
+  answer: "mv &lt;filename&gt; &lt;filename.ORIG&gt;"
+
+
+- question: "For security purposes how will wordpress be run?"
+  answer: "it will be run from by aspecific user."
+
+
+- question: "Why is running services from separate users necessary?"
+  answer: "<br />allows compromised servicesto be isolated, and allows for more specified permissions over simply runningas root - minimizing risk to the entire system."
+
+
+- question: "Where does the global nginx conf file live?"
+  answer: "/etc/nginx/nginx.conf"
+
+
+- question: "Why should you avoid putting site specific configuration into /etc/nginx/nginx.conf?"
+  answer: "<span class="Apple-tab-span" style="white-space:pre"> this is the .conf file for all sites on the hosting platform. Each Sitespecific configuration should should have its own file.<br />"
+
+
+- question: "Based on settings in the global .conf file, what command should we use to createour directory for site specific .conf files?"
+  answer: "mkdir -p /usr/share/nginx/cache/fcgi"
+
+
+- question: "What should you do whenever you edit your nginx config file?"
+  answer: "test your newconfig with nginx -t"
+
+
+- question: "After testing your new nginx .conf file, how do you reload the nginx server?"
+  answer: "systemctl reload nginx"
+
+
+- question: "In our hosting platform, What does the client talk to?"
+  answer: "the webserver"
+
+
+- question: "In our hosting platform, what does webserver talk to when it needs something?"
+  answer: "the php interpreter"
+
+
+- question: "Why does our platform need a php interpreter?"
+  answer: "wordpress is php based"
+
+
+- question: "Why do we need an fpm (fast process manager)?"
+  answer: "so the php interpreter can handle many requests quickly<br />"
+
+
+- question: "How does php load config files?"
+  answer: "It moves up, looking first for application conf files,then user conf files, and finally global conf files"
+
+
+- question: "Why do we need to disable cgi.fix_pathinfo in the php.ini file?"
+  answer: "huge security risk"
+
+
+- question: "What is the customary location to put webfiles?"
+  answer: "/var/www/"
+
+
+- question: "On our webhosting platform what location will substitute for /var/www/ as a place forour webfiles?"
+  answer: "/home/&lt;websitename&gt;/public_html/<br />"
+
+
+- question: "What webfile directory holds the admin backend for a wordpress site?"
+  answer: "wp-admin"
+
+
+- question: "What webfile directory holds the themes and uploads for a wordpress site?"
+  answer: "wp-content"
+
+
+- question: "What webfile directory holds the core application files for a wordpress site?"
+  answer: "wp-includes"
+
+
+- question: "What can you replace to fix a broken or hacked wordpress install?"
+  answer: "wp-admin and wp-includes"
+
+
+- question: "What wordpress webfile directory and file should definitly be backed up?"
+  answer: "wp-content and wp-config.php"
+
+
+- question: "After a security breach, what should you do with the mysql database's salts &amp; keys?"
+  answer: "replace them"
+
+
+- question: "If a one of your wordpress sites has an error, how can you turn on debug mode?"
+  answer: "<br />- vim /home/&lt;websitename&gt;/public_html/wp-config.php- go to the line "define('WP_DEBUG', false);" and change it to true<span class="Apple-tab-span" style="white-space: pre"> "
+
+
+- question: "When improving hosting platform performance, what should be prioritized?"
+  answer: "optimizing the cache"
+
+
+- question: "What file can you modify to optimize your global server settings?"
+  answer: "/etc/nginx/nginx.conf"
+
+
+- question: "If a specific site needs different server optimization settings from the ones in/etc/nginx/nginx.conf, how can you override the global settings?"
+  answer: "adjust settings in the site config file found in /etc/nginx/conf.d/"
+
+
+- question: "Whats an easy way to optimize your mysql database?"
+  answer: "mysqltuner"
+
+
+- question: "What is the first step in a process' lifecycle?"
+  answer: "A parent process forks (clones itself) with different return values for it's child"
+
+
+- question: "What is the next step in a process' lifecycle after a parent process forks (clones itself) with different return values for it's child?"
+  answer: "The child process will usually run an new program"
+
+
+- question: "What is the next step in a process' lifecycle after achild process runs a new program?"
+  answer: "A process will usually have a system call 'exit' which will tell the kernelwhen it's done."
+
+
+- question: "What is the next step in a process' lifecycle aftera process sends system 'exit'call?"
+  answer: "The kernel will kill the process and notify the dead process' parent"
+
+
+- question: "In /etc/passwd,what does the first field display?"
+  answer: "user name"
+
+
+- question: "In /etc/passwd,what does the field after 'username' display?"
+  answer: "an x in place of a password"
+
+
+- question: "In /etc/passwd, what does the field after the 'x' display?"
+  answer: "user id"
+
+
+- question: "In /etc/passwd, what does the field after 'user id' display?"
+  answer: "default group id"
+
+
+- question: "In /etc/passwd, what does the field after 'default group id' display?"
+  answer: "comment field"
+
+
+- question: "In /etc/passwd, what does the field after 'comment field' id' display?"
+  answer: "home directory"
+
+
+- question: "In /etc/passwd, what does the field after 'home directory' id' display?"
+  answer: "user shell"

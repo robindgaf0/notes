@@ -1,0 +1,91 @@
+- question: "In the command line, how do you print working directory?"
+  answer: "pwd"
+
+
+- question: "In the command line, how do you see your computer's network name?"
+  answer: "hostname"
+
+
+- question: "In the command line, how do you make directory?"
+  answer: "mkdir"
+
+
+- question: "In the command line, how do you change directory?"
+  answer: "cd"
+
+
+- question: "In the command line, how do you list directory?"
+  answer: "ls"
+
+
+- question: "In the command line, how do you remove directory?"
+  answer: "rmdir"
+
+
+- question: "In the command line, how do you push directory?"
+  answer: "pushd"
+
+- question: "In the command line, how can you clear your stack?"
+  answer: "irs -c"
+
+
+- question: "In the command line, how do you pop directory?"
+  answer: "popd"
+
+
+- question: "In the command line, how do you copy a file or directory?"
+  answer: "cp"
+
+
+- question: "In the command line, how do you move a file or directory?"
+  answer: "mv"
+
+
+- question: "In the command line, how do you page through a file?"
+  answer: "less"
+
+
+- question: "In the command line, how do you print the whole file?"
+  answer: "cat"
+
+
+- question: "In the command line, how do you execute arguments?"
+  answer: "xargs"
+
+
+- question: "In the command line, how do you find files?"
+  answer: "find"
+
+
+- question: "In the command line, how do you find things inside files?"
+  answer: "grep"
+
+
+- question: "In the command line, how do you read a manual page?"
+  answer: "man"
+
+
+- question: "In the command line, how do you find which man page is appropritate?"
+  answer: "apropos"
+
+
+- question: "In the command line, how do you look at your environment?"
+  answer: "env"
+
+
+- question: "In the command line, how do you print some arguments?"
+  answer: "echo"
+
+
+- question: "In the command line, how do you export/set a new environment variable?"
+  answer: "export"
+
+
+- question: "In the command line, how do you exit the shell?"
+  answer: "exit"
+
+
+- question: "In the command line, how do you become super user root DANGER!"
+  answer: "sudo"
+
+
